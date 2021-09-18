@@ -1,0 +1,377 @@
+.console-container {
+    margin-top: 7px;
+    font-family: 'Sen', sans-serif;
+    @include text(50, 30, 1440);
+    text-align:center;
+    color:white;
+}
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+
+@media(min-width:769px){
+    
+    
+    
+    .page-2__headline{
+        transition: all .9s ease;
+        transform: translate(-100%, 0%)  scale(0);
+    }
+    
+    .page-2__headline._active{
+        transform: translateX(0%)  scale(1);
+    }
+    
+    
+    .page-2__company-1{
+        transition: all .85s ease .5s;
+        transform: translate(0%, -80%);
+        opacity: 0;
+    }
+    
+    .page-2__company-1._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+    .page-2__company-2{
+        transition: all .85s ease .75s;
+        transform: translate(0%, -90%);
+        opacity: 0;
+    }
+    
+    .page-2__company-2._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+    .page-2__company-3{
+        transition: all .85s ease .9s;
+        transform: translate(0%, -90%);
+        opacity: 0;
+    }
+    
+    .page-2__company-3._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+
+    .page-3__title{
+        transition: all .85s ease;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+    .page-3__title._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .page-3__text{
+        transition: all .9s ease .2s;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+
+    .page-3__text._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+    .page-3__button{
+        transition: all .9s ease .5s;
+        transform: translate(0%, -500%);
+        opacity: 0;
+    }
+    .page-3__button._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+    .page-7__title{
+        transition: all .85s ease;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+    .page-7__title._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .page-7__text{
+        transition: all .9s ease .2s;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+
+    .page-7__text._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+    .page-7__button{
+        transition: all .9s ease .5s;
+        transform: translate(0%, -500%);
+        opacity: 0;
+    }
+    .page-7__button._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+    .page-8__title{
+        transition: all .85s ease;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+    .page-8__title._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .page-8__text{
+        transition: all .9s ease .2s;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+
+    .page-8__text._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+    .page-8__button{
+        transition: all .9s ease .5s;
+        transform: translate(0%, -200%);
+        opacity: 0;
+    }
+    .page-8__button._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+    .page-9__title{
+        transition: all .85s ease;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+    .page-9__title._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .page-9__text{
+        transition: all .9s ease .2s;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+
+    .page-9__text._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+    .page-9__button{
+        transition: all .9s ease .5s;
+        transform: translate(0%, -200%);
+        opacity: 0;
+    }
+    .page-9__button._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+    .page-10__title{
+        transition: all .85s ease;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+    .page-10__title._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .page-10__text{
+        transition: all .9s ease .2s;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+    }
+
+    .page-10__text._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .page-4__headline{
+        transition: all 1s ease;
+        transform: translate(0%, 50%);
+        opacity: 0;
+    }
+
+    .page-4__headline._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .abilities__row-1{
+        transition: all .85s ease .4s;
+        transform: translate(0%, -50%);
+        opacity: 0;
+    }
+
+    .abilities__row-1._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .abilities__row-2{
+        transition: all .85s ease .55s;
+        transform: translate(0%, -50%);
+        opacity: 0;
+    }
+
+    .abilities__row-2._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .sites__list._active{
+        animation: 3s ease-in-out 0s anim-2;
+    }
+
+
+    @keyframes anim-2 {
+        0%{
+            transform: translate(0%, 0%);
+        }
+        25%{
+            transform: translate(10%, 0%);
+        }
+        75%{
+            transform: translate(-10%, 0%);
+        }
+        100%{
+            transform: translate(0%, 0%);
+        }
+    }
+
+
+
+
+    .page-6__headline{
+        transition: all .85s ease ;
+        transform: translate(0%, -50%);
+        opacity: 0;
+    }
+
+    .page-6__headline._active{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+
+
+    .page-6__button._active{
+        animation: 3s ease-in-out 0s anim-2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .page-1__title{
+        transition: all .6s ease;
+        opacity: 0;
+        transform: translateX(50%)  scale(0);
+    }
+    .page-1__title._active{
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+    }
+    
+    .page-1__text{
+        transition: all .75s ease;
+        opacity: 0;
+        transform: translateX(25%)  scale(0);
+    }
+    .page-1__text._active{
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+    }
+}
+

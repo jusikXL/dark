@@ -1,0 +1,91 @@
+.page-3__text{
+    color: #8491A0;
+}
+
+
+
+.page-8{
+
+    &__body{
+        width: 100%;
+        max-width: 636px;
+        @media (max-width: 1440px) {
+            padding-top: calc( 48px + (120 - 48) * ((100vw - 320px) / (1440 - 320)));
+            padding-bottom: calc( 48px + (120 - 48) * ((100vw - 320px) / (1440 - 320)));
+        }
+        @media (min-width: 1441px) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+    &__container{
+        @include container(1096, 0, 0, 0, 0, column, normal, flex-start, 0, 0, 0, 0);
+        padding: 0 20px;
+        
+
+    }
+
+    &__title{
+        color: white;
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        @include text(55, 32, 1440);
+        @include line-height(66, 38.5, 1440);
+    }
+    
+    &__text{
+        color: #8491A0;
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        @include text(18, 18, 1440);
+        @include line-height(27, 27, 1440);
+        margin-top: 24px;
+    } 
+    
+    &__button{
+        color: white;
+        margin-top: 40px;
+        cursor: pointer;
+            display: inline-block;
+            position: relative;
+            font-family: 'Sen', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            @include text(16, 16, 1440);
+            @include line-height(24, 24, 1440);
+            @keyframes slidein{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 100%;
+                }
+            }
+            &:hover{
+                &:before{
+                    animation: .25s linear 0s slidein;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    left: 0;
+                    top: 25px;
+                    background-color: #8491A0;
+                }
+            }
+    }
+    &__image{
+        padding: 0 0 60% 0;
+        position: relative;
+        & img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+}

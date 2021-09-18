@@ -1,0 +1,121 @@
+.page-2 {
+
+    &__container {
+        @include container(1285, 0, 0, 0, 0, column, normal, space-between, 0, 0, 0, 0);
+        @include margin(120, auto, 0, auto, 100, auto, 0, auto, 1440);
+        padding: 0 15px;
+    }
+
+    
+
+    &__subtitle {
+        color: #8491A0;
+        font-family: 'Sen', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+
+    }
+
+    &__title {
+        margin-top: 5px;
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        @include text(55, 32, 1440);
+        @include line-height(66, 38, 1440);
+        @media (max-width: 1440px) {
+            max-width: 690px;
+        }
+    }
+
+    &__companies {
+        display: flex;
+        margin-top: 40px;
+        @media (max-width: 545px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__company-1 {
+        flex: 0 1 33.333%;
+        @media (max-width:1440px) {
+            padding-right: calc( 20px + (35 - 20) * ((100vw - 768px) / (1440 - 768)));
+        }
+        @media (min-width:1441px) {
+            padding-right: 35px;
+        }
+    }
+
+    &__company-2 {
+        flex: 0 1 33.333%;
+        @media (max-width:1440px) {
+            padding-right: calc( 20px + (35 - 20) * ((100vw - 768px) / (1440 - 768)));
+            padding-left: calc( 20px + (35 - 20) * ((100vw - 768px) / (1440 - 768)));
+        }
+        @media (min-width:1441px) {
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+
+        @media (max-width: 545px) {
+            margin-top: 40px;
+        }
+    }
+
+    &__company-3 {
+        flex: 0 1 33.333%;
+        @media (max-width:1440px) {
+            padding-left: calc( 20px + (35 - 20) * ((100vw - 768px) / (1440 - 768)));
+        }
+        @media (min-width:1441px) {
+            padding-left: 35px;
+        }
+        @media (max-width: 545px) {
+            margin-top: 40px;
+        }
+    }
+}
+.companies {
+
+    &__number {
+        font-family: 'Sen', sans-serif;
+        font-size: 117px;
+        line-height: 141px;
+        color: #8491A0;
+    }
+
+    &__name {
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        @include text(24, 24, 1440);
+        @include line-height(36, 36, 1440);
+        @media (min-width: 546px) and (max-width: 768px) {
+            max-width: 150px;
+        }
+        @media (max-width: 545px) {
+            text-align: left;
+        }
+    }
+
+    &__description {
+        font-family: 'Sen', sans-serif;
+        color: #8491A0;
+        margin-top: 33px;
+        @include text(16, 16, 1440);
+        @include line-height(24, 24, 1440);
+    }
+
+    &__span-1{
+        color: lime;
+    }
+    &__span-2{
+        color: #609bff;
+    }
+    &__span-3{
+        color: #e95d90;
+    }
+}

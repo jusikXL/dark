@@ -1,0 +1,29 @@
+.page-5{
+    @include margin(120, 0, 0, 0, 80, 0, 0, 0, 1440);
+}
+.sites {
+    width: 100%;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width: 545px) {
+            flex-direction: column;
+        }
+    }
+}
+.list {
+
+    &__item {
+        text-align: center;
+        flex: 0 1 25%;
+        padding: 60px 0px;
+        @media (min-width: 546px) {
+            border: 1px solid #181823;
+            
+        }
+        @media (max-width: 545px) {
+            padding:25px 0px;
+        }
+    }
+}

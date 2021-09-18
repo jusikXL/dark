@@ -1,0 +1,115 @@
+.page-4 {
+
+    @include margin(120, 0, 0, 0, 80, 0, 0, 0, 1440);
+
+    &__container{
+        @include container(1440, 0, 0, 0, 0, row, normal, space-between, 0, 0, 0, 0);
+        padding-left: calc( 20px + (72 - 20) * ((100vw - 320px) / (1440 - 320)));
+        padding-right: calc( 20px + (120 - 20) * ((100vw - 320px) / (1440 - 320)));
+        @media (max-width:1024px) {
+            flex-direction: column;
+        }
+    }
+    
+
+    &__headline {
+        
+        @media (min-width:1025px) {
+            max-width: 368px;
+        }
+    }
+
+    &__title {
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        @include text(55, 32, 1440);
+        @include line-height(66, 38.5, 1440);
+    }
+
+    &__text {
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        @include text(18, 18, 1440);
+        @include line-height(27, 27, 1440);
+        margin-top: 24px;
+        color: #8491A0;
+    }
+
+    &__abilities {
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width:1025px) {
+            margin-left: 70px;
+        }
+        @media (max-width:1024px) {
+            margin-top: 48px;
+        }
+    }
+
+
+    &__ability {
+        flex: 0 1 50%;
+        @media (min-width:546px) {
+            &:first-child{
+                padding-right: 35px;
+            }
+            &:nth-child(2){
+                padding-left: 35px;
+            }
+        }
+        @media (max-width:545px) {
+            margin-top: 55px;            
+        }
+    }
+}
+.ability {
+
+    &__icon {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin-top: 24px;
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        @include text(24, 24, 1440);
+        @include line-height(36, 36, 1440);
+    }
+
+    &__description {
+        margin-top: 12px;
+        font-family: 'Sen', sans-serif;
+        @include text(16, 16, 1440);
+        @include line-height(24, 24, 1440);
+        color: #8491A0;
+    }
+}
+
+.abilities{
+    &__row-1{
+        display: flex;
+        flex-direction: row;
+        @media (max-width:545px) {
+            flex-direction: column;
+        }
+    }
+
+
+    &__row-2{
+        
+        display: flex;
+        flex-direction: row;
+        @media (max-width:545px) {
+            flex-direction: column;
+        }
+        @media (min-width:546px) {
+            margin-top: 50px;
+        }
+    }
+}   
+

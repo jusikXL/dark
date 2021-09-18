@@ -1,0 +1,145 @@
+.header {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      &__container {
+            @include container(1440, 0, 72, 0, 72, row, center, space-between, 0, 20, 0, 20);
+            position: relative;
+            @media(max-width: 767px){
+                  margin-top: 24px;
+            }
+            
+      }
+
+
+      &__logo {
+            cursor: pointer;
+            color: white;
+            font-family: 'Sen', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            @include text(20, 20, 1440);
+            line-height: 150%;
+            position: relative;
+            z-index: 3;
+      }
+}
+.menu {
+
+      &__list {
+            display: flex;
+            position: relative;
+            z-index: 2;
+            
+      }
+
+      &__link {
+            color: white;
+            font-family: 'Sen', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            @include text(16, 16, 1440);
+            line-height: 150%;
+            padding: 32px 24px;
+            flex: 0 1 25%;
+            display: inline-block;
+            transition: linear .22s;
+            @media(min-width: 768px){
+                  &:hover{
+                        background-color: #5221E6;
+                  }
+                  &._active{
+                        background-color: #5221E6;
+                  }
+            }
+      }
+}
+
+.header__burger{
+      display: none;
+}
+
+
+@media(max-width: 767px){
+      .header__burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 3;
+      }
+      
+      
+      .header__burger:before, .header__burger:after{
+            content: '';
+            background: #C4C4C4;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+      }
+      .header__burger:before{
+            top: 0;
+      }
+      .header__burger:after{
+            bottom: 0;
+      }
+      .header__burger span{
+            background: #C4C4C4;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+      }
+      .header__menu{
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #5221E6;
+            padding: 70px 0 0 0;
+            transition: all 0.3s ease 0s;
+            overflow: auto;
+      }
+      .menu__list{
+            display: block;
+      }
+      .header__menu.active{
+            top: 0;
+      }
+      body.lock{
+            overflow: hidden;
+      }
+}
+
+
+.header:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; 
+      z-index: 2;
+}
+
+.header__burger.active:before{
+      transform: rotate(45deg);
+      top: 9px;
+}
+
+.header__burger.active:after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+}
+
+.header__burger.active span{
+      transform: scale(0);
+}

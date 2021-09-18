@@ -1,0 +1,75 @@
+.page-1 {
+    
+    @include margin(80, 0, 0, 0, 40, 0, 0, 0, 1440);
+    
+    background: #000;
+    &__content {
+        order: 2;
+        @media (min-width: 768px) {
+            margin-left: calc(-64px + (-88 + 64) * ((100vw - 768px) / (1440 - 768)));
+            
+        }
+        
+        
+    }
+
+    &__container {
+        margin: 0;
+        align-items: center;
+    }
+
+
+    &__body {
+        z-index: 2;
+        padding: 0;
+        @media (min-width: 768px){
+            width: 57%;
+        }
+        @media (min-width: 768px) {
+            padding-right: 40px;
+            
+        }
+        @media (max-width: 768px) {
+            margin-top: 48px;
+        }
+        @media (min-width: 1441px) {
+            padding-right: 0;
+        }
+    }
+
+    &__title {
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        @include text(78, 32, 1440);
+        @include line-height(94, 38.5, 1440);
+        color: white;
+        & span{
+            color: gray;
+        } 
+        
+    }
+
+    &__text {
+        color: white;
+        z-index: 2;
+        font-family: 'Sen', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        @include margin(32, 0, 0, 0, 16, 0, 0, 0, 1440);
+        @include text(18, 15, 1440);
+        @include line-height(27, 22, 1440);
+    }
+
+
+    &__image {
+        order: 1;
+        transform: translate(0, 0px); 
+        @media (min-width: 768px){
+            padding: 0 0 45% 0;
+        }
+        @media (min-width: 2000px) {
+            padding: 0 0 1500px 0;
+        }
+    }
+}
